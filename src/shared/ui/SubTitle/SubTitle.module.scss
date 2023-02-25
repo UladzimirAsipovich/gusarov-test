@@ -1,0 +1,11 @@
+.subTitle {
+  // font-weight: 300;
+  user-select: none;
+  margin: 0;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+
+  &_textInverse {
+    color: #fff;
+  }
+}

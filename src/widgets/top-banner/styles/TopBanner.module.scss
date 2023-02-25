@@ -1,0 +1,122 @@
+.topBanner {
+  position: relative;
+  overflow: hidden;
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+  }
+
+  &__imageSide {
+    padding: .5rem 0;
+    position: relative;
+    flex: 0 2 350px;
+
+    &.compact {
+      padding: 0;
+
+      @media screen and (min-width: 992px) {
+
+        display: none;
+      }
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+
+  &__sloganSide {
+    flex: 0 1 auto;
+
+    &.compact {
+      @media screen and (min-width: 992px) {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  &__slogan {
+
+    &.compact {
+      @media screen and (min-width: 992px) {
+        padding: .75rem 0;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-right: 10vw;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: .5rem;
+    font-size: 2rem;
+
+    @media screen and (max-width: 992px) {
+      margin-bottom: 1rem;
+      font-size: 3vw;
+    }
+
+    &.compact {
+      @media screen and (max-width: 992px) {
+        margin-bottom: 1rem;
+        font-size: 3vw;
+      }
+
+      @media screen and (min-width: 992px) {
+        margin-bottom: 0;
+        font-size: 1.8vw;
+      }
+
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+        font-size: 32px;
+      }
+    }
+  }
+
+  &__subTitle {
+    margin-bottom: 1.5rem;
+
+    @media screen and (max-width: 992px) {
+      margin-bottom: 1rem;
+      font-size: 3vw;
+    }
+
+    &.compact {
+      @media screen and (max-width: 992px) {
+        margin-bottom: 1rem;
+        font-size: 3vw;
+      }
+
+      @media screen and (max-width: 640px) {
+        margin-bottom: 0.15rem !important;
+        font-size: 2.5vw;
+      }
+
+      @media screen and (min-width: 992px) {
+        margin-bottom: 0 !important;
+        font-size: 1.25vw;
+      }
+    }
+  }
+
+  &__button {
+    border-radius: 4px;
+    font-size: 6px !important;
+  }
+}

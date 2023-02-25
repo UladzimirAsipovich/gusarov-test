@@ -1,0 +1,11 @@
+@mixin AlignLeftCenter {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin AlignCenterCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

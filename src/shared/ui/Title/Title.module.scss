@@ -1,0 +1,10 @@
+.title {
+  user-select: none;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 4px;
+
+  &_textInverse {
+    color: #fff;
+  }
+}

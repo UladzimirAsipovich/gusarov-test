@@ -1,0 +1,14 @@
+.footer {
+  padding: 1rem 2rem;
+
+  &__container {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  &__copyright {
+
+    letter-spacing: normal;
+    font-size: 11px;
+  }
+}

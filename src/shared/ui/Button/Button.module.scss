@@ -1,0 +1,50 @@
+@import "@VAR/_index.scss";
+
+.button {
+  background-color: $Theme_yellow;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  letter-spacing: 8px;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 1.714em;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid $Theme_yellow;
+  transition: background-color, color, 150ms ease;
+
+  &:hover {
+    background-color: transparent;
+    color: $Theme_yellow;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &_inverse {
+    background-color: transparent;
+    color: $Theme_yellow;
+
+    &:hover {
+      background-color: $Theme_yellow;
+      color: #fff
+    }
+  }
+
+  &_sm {
+    padding: 9px 19px;
+  }
+
+  &_lg {
+    padding: 18px 38px 18px 47px;
+  }
+
+  &_border {
+    border-radius: 2px;
+  }
+}
