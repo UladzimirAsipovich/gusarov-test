@@ -7,7 +7,8 @@ const nextConfig = {
     { dev, dir, outDir, distDir, buildId }
   ) {
     return {
-      '/': { page: '/' },
+      __nextDefaultLocale: { page: '/index' },
+      // '/': { page: '/index' },
       '/about': { page: '/about' },
       '/blog': { page: '/blog' },
       '/services': { page: '/services' },
